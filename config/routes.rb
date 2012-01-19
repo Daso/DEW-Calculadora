@@ -1,9 +1,9 @@
 Calculator::Application.routes.draw do
 
-resources :calculadora
-resources :resultado
+root :to => "calculadora#index"
+match "resultado" => "calculadora#resultado"
 
-match 'calculadora/resultado' => 'calculadora#resultado'
+#match 'calculadora/resultado' => 'calculadora#resultado'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
