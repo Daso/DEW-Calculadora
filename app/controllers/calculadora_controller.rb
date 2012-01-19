@@ -11,7 +11,7 @@ class CalculadoraController < ApplicationController
   end
   
   def operador
-    case operacion
+    case @operacion
     when "suma"
       "+"
     when "resta"
