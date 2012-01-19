@@ -1,0 +1,25 @@
+BODY{	text-align: center;}
+A{	color: White;}
+#all{	margin: 10px auto;}
+#cabecera{
+width: 400px;
+background: Gray;
+padding: 5px 0px;
+color: White;
+border: 2px solid #cccccc;
+margin: 10px auto;
+}
+#cuerpo{
+width: 340px;
+margin: 5px auto;
+padding: 30px;
+background: Gray;
+border: 2px solid #cccccc;
+color: white;
+text-align: left;
+}
+#cuerpo LABEL{
+display: block;
+padding:6px;
+}
+#cuerpo FIELDSET{	margin: 10px 0px;}

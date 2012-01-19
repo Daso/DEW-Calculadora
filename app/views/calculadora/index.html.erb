@@ -1,0 +1,37 @@
+<% form_for :calcu, :url => { :action => :resultado } do |formulario| %>
+
+<label for="numero1">Numero
+
+<%= text_field_tag 'numero1','',:size => 30 %>
+
+</label>
+
+<label for="numero2">Numero
+
+<%= text_field_tag 'numero2','',:size => 30 %>
+
+</label>
+
+<fieldset> <legend>Operaciones</legend>
+
+<label for="operacion_suma"></label>
+
+<%= radio_button_tag 'operacion','suma', true %>Suma
+
+<label for="operacion_resta"></label>
+
+<%= radio_button_tag 'operacion','resta' %>Resta
+
+<label for="operacion_multiplica"></label>
+
+<%= radio_button_tag 'operacion','multiplica' %>Multiplicacion
+
+<label for="operacion_divide"></label>
+
+<%= radio_button_tag 'operacion','divide' %>Division
+
+</fieldset>
+
+<input type="submit" value="Calcular"/>
+
+<% end %>
